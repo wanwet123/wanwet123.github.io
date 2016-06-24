@@ -1,0 +1,309 @@
+/*640px布局*/
+
+/* html{font-size: 50px;} */
+html {-webkit-font-smoothing: antialiased;font-family:sans-serif;}
+a{color:#233;}
+body{font-size: 0.14rem;/*实际相当于14px*/}
+body{
+    padding:0;
+    margin:0;
+    width:6.4rem;
+    margin:0 auto;
+    font-family:sans-serif;
+}
+
+.div2{
+    font-size:0.2rem;
+}
+.div3{
+    width:6rem;
+    height:6rem;            
+    border:1px solid #000;
+    box-sizing:border-box;
+}
+.div4{
+    margin-top:0.2rem;
+    width:4rem;
+    height:4rem;
+    border:1px solid #000;
+    box-sizing:border-box;
+}
+.img1{
+    width:6.4rem;
+}
+.page{
+  width:6.4rem;
+  background:wheat;
+}
+
+[data-dpr="1"] .div2{
+  font-size:16px;
+}
+[data-dpr="2"] .div2{
+  font-size:32px;          
+}
+[data-dpr="3"] .div2{
+  font-size:48px;
+}     
+.fix_item{
+    position:fixed;
+    left:0;
+    right:0;
+    width:100%;
+    max-width:6.4rem;
+    margin:0 auto;
+    -webkit-transition:width .011s ease;
+    -moz-transition:width .011s ease;
+    transition:width .011s ease;
+}   
+.head,.foot{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:.7rem;
+    background:#FF5000;
+    color:#fff;            
+    text-align:center;
+    font-size:.28rem;
+    max-width:6.4rem;  /*通栏切固定定位，加上这句和下句，才能在PC上显示的是定宽和居中的*/
+    margin:0 auto;
+    z-index:10;
+}
+.head{
+    background:#393A3E;
+    color:#233;
+    overflow:hidden;
+    /* -webkit-transition:top 30ms ease-in-out;
+    transition:top 30ms ease-in-out; */
+}
+.foot{
+    height:.88rem;
+    /* line-height: .88rem; */
+    background:#eee;
+    bottom:0;
+    top:auto;
+    color:#333;
+    line-height:auto;
+    /* box-shadow:0 -1px 3px #333; */
+}
+.foot a{
+    color:#7E7E7E;
+    display:table-cell;
+    width:1%;
+    text-align:center;
+    font-size:.22rem;
+    height:.88rem;
+}
+.wrap{
+    margin-top:.7rem;
+    margin-bottom:.8rem;
+}
+.loadMask{position:fixed;width:100%;height:100%;top:0;left:0;background:white;z-index:1000;}
+
+/*图片轮播*/
+.slideBox{
+    position:relative;
+    overflow:hidden;
+}
+.slideBox>.bd li img{
+    width:6.4rem;
+}
+.slideBox>.hd{
+    position:absolute;
+    bottom:0.06rem;
+    line-height:0.1rem;
+    height:0.1rem;
+    text-align:center;
+    width:100%;
+}
+.slideBox>.hd>ul>li{
+    display:inline-block; /*inline不能设置宽度*/
+    margin-left:10px;
+    width:0.08rem;
+    height:0.08rem;
+    margin:0.01rem 0.08rem 0 0;
+    background:#fff;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-indent:-9999em;
+}
+.slideBox>.hd>ul>li:last-child{
+    margin-right:0;
+}
+.slideBox>.hd>ul>li.on{
+    background:#EC6945;
+} 
+/*头条*/
+#toutiao{
+    position:fixed;
+    height:.7rem;
+    background:#23D5E1;
+    top:0;
+    width:100%;
+    max-width:6.4rem;
+    z-index:20;
+    overflow:hidden;
+}
+.top_bg{
+    height:.7rem;
+    position:absolute;
+    left:18%;
+    top:0;
+}
+
+.foot i{
+    /* font-size:.4rem;
+    margin-top:0.128rem;
+    margin-bottom:0.018rem; */
+    padding:0;
+    display:block;
+    height:.56rem;
+    line-height:.56rem;
+    font-size:.38rem;
+}
+.foot span{
+    display:block;
+    height:.32rem;
+    line-height:.2rem;
+}
+.foot .act{
+    color:#29B7BF;
+}
+
+.head .logo{
+    position:absolute;
+    left:30%;
+    right:30%;
+    height:.7rem;
+}
+.head .logo img{
+    display:inline-block;
+    height:.38rem;
+    margin-top:.16rem;
+}
+
+.pos_a{position:absolute;}
+.menu,.search{
+    height:.7rem;
+    width:.7rem;
+    text-align:center;
+    left:0;
+}
+.search{
+    right:0;
+    left:auto;
+}
+.menu i,.search i{
+    color:#fff;
+    height:.44rem;
+    font-size:.42rem;
+    margin-top:0.13rem;
+    line-height:.44rem;
+    display:inline-block;
+}
+
+
+/*项目导航*/
+.item_area{
+    background:white;
+    width:6.4rem;
+    color:#233;
+    font-size:0.28rem;
+    padding:0.2rem 0.1rem;
+}
+.item_area ul{
+    overflow:hidden;
+}
+.item_area ul:first-child{
+    margin-bottom:.2rem;
+}
+.item_area ul li{
+    width:25%;
+    float:left;
+}
+/* .item_area ul li:last-child{
+    margin-bottom:0;
+} */
+
+.item_area li a{
+    width:100%;
+    display:inline-block;
+    text-align:center;
+}
+.item_area li span{
+    display:inline-block;
+    width:.76rem;
+    height:.76rem;
+    line-height:.76rem;
+    background:#ED3946;
+    border-radius:50%;
+    margin-bottom:.1rem;
+    color:#fff;
+    font-family:'楷体';
+}
+.item_area li p{
+    font-size:.22rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,245 @@
+body{font-size:12px;}
+a{color:#fff;}
+a:visited{color:#265778;}
+a:hover{color:#9f3;}
+.bold{font-weight:bold;}
+.section { text-align: center; font: 20px "Microsoft Yahei"; color: #eef3f0;;}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{background:#fff;}
+.head_photo{position:absolute;top:0;height:220px;overflow:hidden;}
+.loading{
+   position:fixed;
+   width:100%;
+   height:100%;
+   top:0;
+   right:0;
+   z-index:1000;
+   background:#F1F1F1;
+   display:block;
+}
+.page{
+  height:100%;
+}
+.loading img{
+   width:300px;
+   height:219px;
+   position:fixed;
+   top:50%;
+   left:50%;
+   margin:-140px 0 0 -150px;
+}
+
+.user_photo{
+  width:120px;
+  height:120px;
+  margin:10px auto;
+  background:#fff;
+  border-radius:50%;
+  box-shadow:0 0 2px 2px #fff;
+  overflow:hidden;
+}
+.user_photo img{
+  transform:scale(1.1);
+}
+.fp-tableCell {
+  /* display: block;
+  vertical-align: auto; */
+  /* text-align:left; */
+}
+h1{
+  font-size:3em;
+  font-weight:bold;
+  color:#fff;
+  text-align:center;
+  text-shadow:1px 2px #22c3aa,2px 4px #aee2d9;
+  margin-bottom:0.5em;
+}
+
+.layout,.bars,#menu{
+  -webkit-transition:all .33s cubic-bezier(.57,.4,.22,.78);
+  -moz-transition:all .33s cubic-bezier(.57,.4,.22,.78);
+  -ms-transition:all .33s cubic-bezier(.57,.4,.22,.78);
+  -o-transition:all .33s cubic-bezier(.57,.4,.22,.78);
+  transition:all .33s cubic-bezier(.57,.4,.22,.78);
+}
+
+.bars{
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,.7);
+  width:24px;
+  height:24px;
+  display:block;
+  z-index:12;
+  padding:10px;
+  -webkit-border-radius:1px;
+  -moz-border-radius:1px;
+  border-radius:1px;
+}
+.bar,.bar:before,.bar:after{
+  background:#fff;
+  width:100%;
+  height:2px;
+  -webkit-transition:all .4s;
+  -moz-transition:all .4s;
+  -o-transition:all .4s;
+  transition:all .4s;
+}
+.bar{
+  margin-top:10px;
+  display:block;
+  position:relative;
+}
+.layout{
+  position:relative;
+  left:0;
+}
+.layout.active{
+  position:relative;
+  left:180px;
+}
+.bars:hover,
+.bars:focus{
+  background:#000;
+}
+.bars.active{
+  -webkit-transform:translate3d(180px,0,0);
+  -moz-transform:translate3d(180px,0,0);
+  -ms-transform:translate3d(180px,0,0);
+  transform:translate3d(180px,0,0);
+}
+
+.bar:before,.bar:after{
+  content:'';
+  position:absolute;
+  top:-8px;
+}
+.bar:after{
+  top:8px;
+}
+
+.bars.active .bar {
+  background:transparent;
+}
+.bars.active .bar:before{
+  -webkit-transform:rotate(45deg) translate(6px,5px);
+}
+.bars.active .bar:after{
+  -webkit-transform:rotate(-45deg) translate(6px,-5px);
+}
+
+
+#menu{
+  color:#fff;
+  width:180px;
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  overflow-y:auto;
+  background:#191818;
+  z-index:10;
+  -webkit-overflow-scrolling:touch;
+  -webkit-transform:translate3d(-180px,0,0);
+  -moz-transform:translate3d(-180px,0,0);
+  -ms-transform:translate3d(-180px,0,0);
+  -o-transform:translate3d(-180px,0,0);
+  transform:translate3d(-180px,0,0);
+}
+#menu.active{
+  -webkit-transform:translate3d(0px,0,0);
+  -moz-transform:translate3d(0px,0,0);
+  -ms-transform:translate3d(0px,0,0);
+  -o-transform:translate3d(0px,0,0);
+  transform:translate3d(0px,0,0);
+}
+
+.menu h5{
+  text-align:left;
+  height:50px;
+  padding:10px 8px;
+  text-transform:uppercase;;
+  font:20px/30px cursive,Helvetica,Arial,'Microsoft Yahei',sans-serif;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+
+}
+.menu ul{
+  padding:30px 0 0;
+  border-top:1px solid #333;
+  font-family:'宋体','Microsoft Yahei',Arial,Helvetica,sans-serif;
+}
+.menu ul li{
+  padding:5px 10px;
+  font-size:16px;
+}
+.menu ul a{
+  color:white;
+}
+
+
+
+#subtitle{
+  margin:0 0 0.6em 0;
+  color:#aee2d9;
+}
+
+
+.email{
+  padding:.6em 0 0;
+}
+.email a{
+  font-size:1em;
+  color:#008a75;
+  text-decoration:none;
+  transition:0.5s;
+}
+.email a:hover{
+  color:#9f3;
+}
+
+
+.tag-panel {
+    margin: 15px auto;
+}
+.tag.expert {
+    opacity: 1;
+}
+.tag.familiar {
+    opacity: 0.75;
+}
+.tag {
+    background-color: #096254;
+    color: #aee2d9;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
